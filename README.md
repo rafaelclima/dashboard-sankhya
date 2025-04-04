@@ -1,10 +1,22 @@
 # Dashboard Sankhya 📊
 
-[![React](https://img.shields.io/badge/React-v18.3.1-blue.svg)](https://reactjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.6.2-blue.svg)](https://www.typescriptlang.org)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.11-blue.svg)](https://tailwindcss.com)
-[![Radix UI](https://img.shields.io/badge/Radix_UI-v1.1.2-blue.svg)](https://www.radix-ui.com)
-[![Recharts](https://img.shields.io/badge/Recharts-2.13.0-blue.svg)](https://recharts.org)
+<div data-badges>
+  <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/React-v18.3.1-blue.svg" alt="React" />
+  </a>
+  <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/TypeScript-5.6.2-blue.svg" alt="TypeScript" />
+  </a>
+  <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-3.4.11-blue.svg" alt="Tailwind CSS" />
+  </a>
+  <a href="https://www.radix-ui.com" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Radix_UI-v1.1.2-blue.svg" alt="Radix UI" />
+  </a>
+  <a href="https://recharts.org" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Recharts-2.13.0-blue.svg" alt="Recharts" />
+  </a>
+</div>
 
 ## 🚀 Sobre o Projeto
 
@@ -14,7 +26,7 @@ O Dashboard Sankhya é uma aplicação moderna e eficiente para visualização e
 
 Aqui está uma prévia da interface do Dashboard Sankhya:
 
-![Capa do Dashboard](.gitassets/capa.png)
+![Dashboard Sankhya-Om](https://github.com/rafaelclima/dashboard-sankhya/blob/master/.gitassets/capa.png?raw=true)
 
 > **Nota:** Para mais imagens e detalhes sobre a interface, confira a pasta [.gitassets](.gitassets/) do projeto.
 
