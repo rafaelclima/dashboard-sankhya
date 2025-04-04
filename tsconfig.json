@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "esnext"], // Bom para desenvolvimento web
+    "allowJs": true, // Permite arquivos JavaScript
+    "skipLibCheck": true, // Ignora a verificação de tipos em arquivos de declaração
+    "skipDefaultLibCheck": true, // Ignora a verificação de tipos em bibliotecas padrão
+    "esModuleInterop": true, // Habilita interoperabilidade entre CommonJS e ES Modules
+    "allowSyntheticDefaultImports": true, // Permite importações padrão de módulos sem exportação padrão
+    "strict": true, // Habilita todas as opções de verificação de tipo estritas
+    "strictBindCallApply": true, // Verifica tipos de argumentos em chamadas de função
+    "forceConsistentCasingInFileNames": true, // Garante consistência no case-sensitive de nomes de arquivos
+    "noFallthroughCasesInSwitch": true, // Reporta erros para casos de switch que caem
+    "module": "esnext", // Usa o sistema de módulos mais recente
+    "moduleResolution": "node", // Usa a resolução de módulos do Node.js
+    "resolveJsonModule": true, // Permite importar arquivos .json
+    "isolatedModules": true, // Garante que cada arquivo pode ser compilado de forma segura
+    "noEmit": true, // Não emite arquivos de saída (útil quando usando Babel)
+    "jsx": "react-jsx", // Suporte para JSX no React 17+
+    "baseUrl": "src", // Define a pasta base para imports relativos
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "paths": {
+      "@/*": ["*"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@routes/*": ["routes/*"],
+      "@contexts/*": ["contexts/*"],
+      "@services/*": ["services/*"],
+      "@controllers/*": ["controllers/*"],
+      "@hooks/*": ["hooks/*"],
+      "@utils/*": ["utils/*"],
+      "@styles/*": ["styles/*"],
+      "@assets/*": ["assets/*"],
+      "@config/*": ["config/*"],
+      "@layout/*": ["layout/*"],
+      "@lib/*": ["lib/*"],
+      "@components/TableAmazon/*": ["components/TableAmazon/*"]
+    },
+    "incremental": true, // Habilita compilação incremental para builds mais rápidos
+    "noUnusedLocals": false, // Reporta erros em variáveis locais não utilizadas
+    "noUnusedParameters": true, // Reporta erros em parâmetros não utilizados
+    "noImplicitReturns": true, // Garante que todas as rotas de código retornem um valor
+    "noImplicitAny": false, // Reporta erros em expressões e declarações com um 'any' implícito
+    "noImplicitThis": true, // Reporta erros em usos de 'this' com um tipo 'any' implícito
+    "strictNullChecks": true // Habilita verificações estritas de null e undefined
+  },
+  "include": ["src/**/*", "types"], // Inclui todos os arquivos em src e na pasta types
+  "exclude": ["node_modules", "build", "dist"] // Exclui pastas desnecessárias da compilação
+}

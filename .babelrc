@@ -1,0 +1,34 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    ["@babel/preset-react", { "runtime": "automatic" }],
+    ["@babel/preset-typescript", { "runtime": "automatic" }]
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@": "./src",
+          "@components": "./src/components",
+          "@pages": "./src/pages",
+          "@routes": "./src/routes",
+          "@contexts": "./src/contexts",
+          "@services": "./src/services",
+          "@controllers": "./src/controllers",
+          "@hooks": "./src/hooks",
+          "@utils": "./src/utils",
+          "@styles": "./src/styles",
+          "@assets": "./src/assets",
+          "@config": "./src/config",
+          "@layout": "./src/layout",
+          "@lib": "./src/lib",
+          "@components/TableAmazon": "./src/components/TableAmazon",
+          "@components/ui": "./src/components/ui"
+        }
+      }
+    ],
+    "@babel/plugin-transform-runtime"
+  ]
+}

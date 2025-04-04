@@ -1,0 +1,30 @@
+export interface conciliacao {
+  ADQUIRENTE: number;
+  AUTORIZACAO: string;
+  BANCO: number;
+  BANDEIRAEXT: string;
+  CANALENTRADA: string;
+  CONTA: string;
+  DESDOBRAMENTO: number;
+  DTCREDITO: Date;
+  DTNSU: Date;
+  EMPRESA: number;
+  ESTABELECIMENTO: string;
+  ID: number;
+  LEGENDA: string;
+  NOMEARQ: string;
+  NSUUNIVERSAL: string;
+  NUFIN: number;
+  NUMNSU: string;
+  NUMPARCELAS: number;
+  NUMRV: string;
+  OCORRENCIAS: string;
+  STATUS: string;
+  TIPOARQUIVO: number;
+  TIPTITARQ: string;
+  TXEXT: number;
+  TXSKW: number;
+  VLRPAGO: number;
+  VLRTOTEXT: number;
+  VLRTOTSKW: number;
+}

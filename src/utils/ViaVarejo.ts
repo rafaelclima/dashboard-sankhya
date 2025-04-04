@@ -1,0 +1,99 @@
+import React from 'react';
+
+export function useViaVarejo() {
+  const listaDeConciliacoes = () => {
+    const sql = `
+        SELECT IDCONCILIACAO AS VALUE, IDCONCILIACAO || ' - ' || TO_CHAR(DH_BAIXA_OU_LANC_MOV_BANC, 'dd/MM/yyyy') AS LABEL FROM AD_CONCVIAVAREJO ORDER BY IDCONCILIACAO
+    `;
+    return sql;
+  };
+
+  const linhasDoArquivo = () => {
+    const sql = `
+        SELECT
+          IDCONCILIACAO,
+          IDTRANSACAO,
+          ID_ENTREGA,
+          NUM_PEDIDO,
+          NUM_PARCELAS,
+          PARCELA_ATUAL,
+          DT_LIBERACAO,
+          DT_PEDIDO_ENTREGUE,
+          DT_PEDIDO_INCLUIDO,
+          DT_PREVISTA_REPASSE,
+          MARCA,
+          METODO_PAGAMENTO,
+          MOTIVO_AJUSTE,
+          OBSERVACOES,
+          ORIGEM_REPASSE,
+          PER_COMISSAO_APLICADA,
+          PER_COMISSAO_CONTRATUAL,
+          TIPO_CAMPANHA,
+          TIPO_TRANSACAO,
+          VLR_BRUTO_REPASSE,
+          VLR_COMISSAO_APLICADA,
+          VLR_DESC_ONUS_LOJA,
+          VLR_DESC_ONUS_VIA_VAREJO,
+          VLR_FRETE_PROMO_ONUS_LOJA,
+          VLR_FRETE_PROMO_ONUS_VIA_VAREJ,
+          VLR_LIQUIDO_REPASSE,
+          VLR_PARCELA,
+          VLR_PROD_SEM_DESC,
+          VLR_TRANSACAO,
+          STATUS,
+          OCORRENCIA,
+          TIPO_FRETE,
+          VLR_FRETE
+      FROM AD_CONCVIAVAREJOTRANSACOES
+      WHERE
+        IDCONCILIACAO = 'C-20240603'
+      ORDER BY
+        MARCA
+    `;
+    return sql;
+  };
+}
+
+// Caonsulta viavarejo:
+
+// SELECT IDCONCILIACAO AS VALUE, IDCONCILIACAO || ' - ' || TO_CHAR(DH_BAIXA_OU_LANC_MOV_BANC, 'dd/MM/yyyy') AS LABEL FROM AD_CONCVIAVAREJO ORDER BY IDCONCILIACAO
+
+// SELECT
+//     IDCONCILIACAO,
+//     IDTRANSACAO,
+//     ID_ENTREGA,
+//     NUM_PEDIDO,
+//     NUM_PARCELAS,
+//     PARCELA_ATUAL,
+//     DT_LIBERACAO,
+//     DT_PEDIDO_ENTREGUE,
+//     DT_PEDIDO_INCLUIDO,
+//     DT_PREVISTA_REPASSE,
+//     MARCA,
+//     METODO_PAGAMENTO,
+//     MOTIVO_AJUSTE,
+//     OBSERVACOES,
+//     ORIGEM_REPASSE,
+//     PER_COMISSAO_APLICADA,
+//     PER_COMISSAO_CONTRATUAL,
+//     TIPO_CAMPANHA,
+//     TIPO_TRANSACAO,
+//     VLR_BRUTO_REPASSE,
+//     VLR_COMISSAO_APLICADA,
+//     VLR_DESC_ONUS_LOJA,
+//     VLR_DESC_ONUS_VIA_VAREJO,
+//     VLR_FRETE_PROMO_ONUS_LOJA,
+//     VLR_FRETE_PROMO_ONUS_VIA_VAREJ,
+//     VLR_LIQUIDO_REPASSE,
+//     VLR_PARCELA,
+//     VLR_PROD_SEM_DESC,
+//     VLR_TRANSACAO,
+//     STATUS,
+//     OCORRENCIA,
+//     TIPO_FRETE,
+//     VLR_FRETE
+// FROM AD_CONCVIAVAREJOTRANSACOES
+// WHERE
+//     IDCONCILIACAO = 'C-20240603'
+// ORDER BY
+//     MARCA
